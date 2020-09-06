@@ -25,5 +25,5 @@ This section is about uploading images amazon aws s3 cloud server.
 2. open https://labs.vocareum.com/
 3. create public bucket as your_name
 4. set bucket permisions to public
-5. edit permisions - control list
-6. edit permisions - config vars
+5. update permisions - Bucket policy https://github.com/evansMeja/aws_s3_accounts/blob/master/BucketPolicy.txt
+6. update permisions - CORS config  https://github.com/evansMeja/aws_s3_accounts/blob/master/CORSconfig.txt
