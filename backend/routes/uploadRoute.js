@@ -22,22 +22,22 @@ router.post('/', upload.single('image'), (req, res) => {
 });
 
 aws.config.update({
-  accessKeyId: 'ASIAR576S5TK2TWJQ2P6',
-  secretAccessKey: 'ooSSgcRby6oXx4fliITj+5YVh6aijE9/9BVJwJEy'
+  accessKeyId: '',
+  secretAccessKey: ''
 });
 
 
 const s3 = new aws.S3({
- accessKeyId: 'ASIAR576S5TK2TWJQ2P6',
- secretAccessKey: 'ooSSgcRby6oXx4fliITj+5YVh6aijE9/9BVJwJEy',
- sessionToken:'FwoGZXIvYXdzEAUaDOQFWjLWGL4cWixXnSLKAQRKJgZXwuIuVsDtcAbzstnipJwDRaeAvHimcbpbCQo35PgVNCR9Kz3K1BQT1TVFW0NrNu3OK9/OKCegrQjKNdojtvoePl2wYSdR1kMoqyK3EYhTA7YzAnLfFyasg39d9/aSRsYmbmtizk2M4ls2BECVcFVOIjcuu/DgGEyUGUUJTcKfpOIh5pab8GbFV+hJxC+BguDlUNcpwuPcobEZVcEjOIoDYKUnNVDwJ0Q+S2ESeWvMmHl0bNPdhtzvVULZH082+zORhtCP7DooopLT+gUyLSV3YgZt0TQRBc97HBw0ibBRHPdJH5DzTEmVMvNO13o+7sqbmD8VINhVwi9/Wg==',
- Bucket: 'mynews3account'
+ accessKeyId: '',
+ secretAccessKey: '',
+ sessionToken:'',
+ Bucket: ''
 });
 
 
 const storageS3 = multerS3({
   s3 : s3,
-  bucket: 'mynews3account',
+  bucket: '',
   acl: 'public-read',
   contentType: multerS3.AUTO_CONTENT_TYPE,
   key(req, file, cb) {
